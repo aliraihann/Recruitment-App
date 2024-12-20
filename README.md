@@ -1,15 +1,14 @@
 # Recruitment Application
 
 ## Description
-This is a simple web application built using ASP.NET Core MVC for managing job applicants. The application allows users to add, edit, and delete applicant data. It uses SQL Server as the database and is designed to run in a local environment.
+This is a simple web application built using ASP.NET Core MVC for managing job applicants. The application allows users to add, edit, and delete candidate data. It uses SQL Server as the database and is designed to run in a local environment.
 
 ## Features
-- Add, edit, and delete applicant data.
+- Add, edit, and delete candidate data.
 - Built with ASP.NET Core MVC.
 - Uses SQL Server for data storage.
 - Clear and structured code.
 - Implements dependency injection.
-- (Optional) Uses Dapper as an ORM for data access.
 
 ## Prerequisites
 Before you begin, ensure you have the following installed on your local machine:
@@ -40,12 +39,20 @@ Clone this repository to your local machine using the following command:
 
 ## Snapshot of the Application
 1. **Home Page**
+   ![Home-Page](https://github.com/aliraihann/Recruitment-App/blob/main/Home%20Page.PNG)
+   
    ENDPOINT:yourAppURL
-2. **Candidate List**
+3. **Candidate List**
+   ![Candidate-List-Page](https://github.com/aliraihann/Recruitment-App/blob/main/Candidate%20List.PNG)
+   
    ENDPOINT:yourAppURL/Candidate/List
-3. **Add New Candidate Page**
+5. **Add New Candidate Page**
+   ![Add-New-Candidate-Page](https://github.com/aliraihann/Recruitment-App/blob/81d8222035cbacbe20853bbdcb82af27c3917720/Add%20New%20Candidate.PNG)
+   
    ENDPOINT:yourAppURL/Candidate/Add
-4. **Update Candidate Page**
+7. **Update Candidate Page**
+   ![Edit-Candidate-Information](https://github.com/aliraihann/Recruitment-App/blob/main/Edit.PNG)
+   
    ENDPOINT:yourAppURL/Candidate/Edit/Candidate_Id
    
 
