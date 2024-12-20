@@ -1,0 +1,34 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model List<RecruitmentApp.Models.Entities.Employee>
+<h1>Candidate List</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Position</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var candidate in Model)
+        {
+            <tr>
+                <td>@candidate.Id</td>
+                <td>@candidate.Name</td>
+                <td>@candidate.Email</td>
+                <td>@candidate.Phone</td>
+                <td>@candidate.Position</td>
+                <td>
+                    <a class="btn btn-outline-primary" asp-controller="Candidates" asp-action="Edit" asp-route-id="@candidate.Id">Edit</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
